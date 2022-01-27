@@ -1212,6 +1212,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color bleu
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1772,6 +1773,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color vert
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -2462,6 +2464,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable icon_back
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2605,6 +2608,18 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id buttonAgent1
+id buttonAgent10
+id buttonAgent11
+id buttonAgent2
+id buttonAgent3
+id buttonAgent4
+id buttonAgent5
+id buttonAgent6
+id buttonAgent7
+id buttonAgent8
+id buttonAgent9
+id buttonLogin
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2679,6 +2694,8 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextEmailAddress
+id editTextPassword
 id edit_query
 id elastic
 id end
@@ -2722,6 +2739,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageViewBack
 id immediateStop
 id included
 id info
@@ -2938,6 +2956,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewTitle
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3070,6 +3089,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_agent
+layout activity_login
 layout activity_main
 layout activity_splash
 layout custom_dialog
@@ -3088,6 +3109,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout layout_header
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3164,6 +3186,17 @@ menu example_menu2
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string Agent1
+string Agent10
+string Agent11
+string Agent2
+string Agent3
+string Agent4
+string Agent5
+string Agent6
+string Agent7
+string Agent8
+string Agent9
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3572,6 +3605,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style EditTextEpsi
 style EmptyTheme
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Body_Text

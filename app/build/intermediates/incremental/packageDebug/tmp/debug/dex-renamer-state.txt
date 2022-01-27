@@ -1,4 +1,4 @@
-#Mon Jan 24 16:42:05 CET 2022
+#Thu Jan 27 14:27:25 CET 2022
 base.2=C\:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
 path.2=14/classes.dex
 base.1=C\:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

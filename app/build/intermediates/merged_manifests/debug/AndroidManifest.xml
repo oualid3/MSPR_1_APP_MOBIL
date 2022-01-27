@@ -20,6 +20,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.MSPR_1_APP_MOBIL" >
         <activity
+            android:name="fr.epsi.mspr_1_app_mobil.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="fr.epsi.mspr_1_app_mobil.AgentActivity"
+            android:exported="false" />
+        <activity
             android:name="fr.epsi.mspr_1_app_mobil.MainActivity"
             android:exported="false" />
         <activity

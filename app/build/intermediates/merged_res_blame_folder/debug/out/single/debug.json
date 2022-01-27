@@ -20,6 +20,10 @@
         "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\drawable_icon_back.png.flat",
+        "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\drawable\\icon_back.png"
+    },
+    {
         "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -66,5 +74,13 @@
     {
         "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_header.xml.flat",
+        "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\layout\\layout_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_agent.xml.flat",
+        "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\layout\\activity_agent.xml"
     }
 ]

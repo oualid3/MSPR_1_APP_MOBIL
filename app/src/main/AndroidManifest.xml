@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MSPR_1_APP_MOBIL">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgentActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
