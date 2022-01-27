@@ -1,9 +1,9 @@
-#Thu Jan 27 14:27:25 CET 2022
-base.2=C\:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+#Thu Jan 27 14:42:24 CET 2022
+base.2=C\:\\sofiane_dev\\mspr_dev_app\\mspr_mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
 path.2=14/classes.dex
-base.1=C\:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\sofiane_dev\\mspr_dev_app\\mspr_mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 path.1=0/classes.dex
-base.0=C\:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.0=C\:\\sofiane_dev\\mspr_dev_app\\mspr_mobile\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
