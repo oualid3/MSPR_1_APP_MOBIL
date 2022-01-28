@@ -1,0 +1,2 @@
+fr/epsi/mspr_1_app_mobil/BuildConfig.java
+ fr.epsi.mspr_1_app_mobil.BuildConfig
