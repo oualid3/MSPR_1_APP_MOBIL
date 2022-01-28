@@ -1,5 +1,6 @@
 package fr.epsi.mspr_1_app_mobil
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -17,10 +18,22 @@ class LoginActivity : AppCompatActivity() {
 
         //admin and admin
         loginbtn.setOnClickListener {
-            if (username.text.toString() == "admin" && password.text.toString() == "admin") {
+            if (username.text.toString() == getString(R.string.Agent1) && password.text.toString() == "admin") {
                 //correct
                 Toast.makeText(this@LoginActivity, "LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show()
-            } else  //incorrect
+                val newIntent= Intent(application,AgentActivity::class.java)
+                newIntent.putExtra("title",getString(R.string.Agent1))
+//                newIntent.putExtra("urlImage","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFiHOkKUHVBF3TcyU1NgawBlIV9mIoSGAuA&usqp=CAU")
+                startActivity(newIntent)
+            } else if (username.text.toString() == getString(R.string.Agent2) && password.text.toString() == "admin2") {
+                //correct
+                Toast.makeText(this@LoginActivity, "LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show()
+                val newIntent= Intent(application,AgentActivity::class.java)
+                newIntent.putExtra("title",getString(R.string.Agent2))
+//                newIntent.putExtra("urlImage","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFiHOkKUHVBF3TcyU1NgawBlIV9mIoSGAuA&usqp=CAU")
+                startActivity(newIntent)
+            }
+            else  //incorrect
                 Toast.makeText(this@LoginActivity, "LOGIN FAILED !!!", Toast.LENGTH_SHORT).show()
         }
     }
