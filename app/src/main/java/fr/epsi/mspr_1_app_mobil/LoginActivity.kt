@@ -1,24 +1,28 @@
 package fr.epsi.mspr_1_app_mobil
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
+import fr.epsi.mspr_1_app_mobil.R
+import android.widget.TextView
+import com.google.android.material.button.MaterialButton
+import android.widget.Toast
 
-class LoginActivity : BaseActivity() {
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-        showBtnBack()
-        setHeaderTitle("Login")
+        setContentView(R.layout.activity_main)
+        val username = findViewById<View>(R.id.username) as TextView
+        val password = findViewById<View>(R.id.password) as TextView
+        val loginbtn = findViewById<View>(R.id.loginbtn) as MaterialButton
 
-        val editTextEmailAddress= findViewById<EditText>(R.id.editTextEmailAddress)
-        val editTextPassword= findViewById<EditText>(R.id.editTextPassword)
-
-        val buttonLogin =findViewById<Button>(R.id.buttonLogin)
-
-        buttonLogin.setOnClickListener(View.OnClickListener {
-            (application as ShowToast).showToast(editTextEmailAddress.text.toString()+"/"+editTextPassword.text)
-        })
+        //admin and admin
+        loginbtn.setOnClickListener {
+            if (username.text.toString() == "admin" && password.text.toString() == "admin") {
+                //correct
+                Toast.makeText(this@LoginActivity, "LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show()
+            } else  //incorrect
+                Toast.makeText(this@LoginActivity, "LOGIN FAILED !!!", Toast.LENGTH_SHORT).show()
+        }
     }
 }
