@@ -1,0 +1,48 @@
+{
+    "agents": [
+        {
+            "fullname": "Ayano Aishi",
+            "agentUrl": "http://frosty.thebault.pro/aaishi/aaishi.json"
+        },
+        {
+            "fullname": "Noel Pere",
+            "agentUrl": "http://frosty.thebault.pro/npere/npere.jso"
+        },
+        {
+            "fullname": "Nabil El kelb",
+            "agentUrl": "http://frosty.thebault.pro/nel_kelb/nel_kelb.json"
+        },
+        {
+            "fullname": "Soufien 3000",
+            "agentUrl": "http://frosty.thebault.pro/s3000/s3000.json"
+        },
+        {
+            "fullname": "Michael Jakson",
+            "agentUrl": "http://frosty.thebault.pro/mjakson/mjakson.json"
+        },
+        {
+            "fullname": "Bernard Fa",
+            "agentUrl": "http://frosty.thebault.pro/bfa/bfa.json"
+        },
+        {
+            "fullname": "L'eponge Bob",
+            "agentUrl": "http://frosty.thebault.pro/lbob/lbob.json"
+        },
+        {
+            "fullname": "Ilario Dark",
+            "agentUrl": "http://frosty.thebault.pro/idark/idark.json"
+        },
+        {
+            "fullname": "Marie-louise Hollande",
+            "agentUrl": "http://frosty.thebault.pro/mhollande/mhollande.json"
+        },
+        {
+            "fullname": "Tom Voldy",
+            "agentUrl": "http://frosty.thebault.pro/tvoldy/tvoldy.json"
+        },
+        {
+            "fullname": "Celestin Chankla",
+            "agentUrl": "http://frosty.thebault.pro/cchankla/cchankla.json"
+        }
+    ]
+}

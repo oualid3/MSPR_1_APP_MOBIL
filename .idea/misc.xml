@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/drawable/bouton.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/drawable/ic_launcher_background.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/layout/activity_agent.xml" value="0.3625" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/layout/activity_login.xml" value="0.3484375" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/layout/activity_material.xml" value="0.3625" />
+        <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/layout/activity_materials.xml" value="0.3625" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/layout/card_agent.xml" value="0.3625" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/layout/layout_header.xml" value="0.3625" />
+        <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/xml/network_security_config.xml" value="0.3625" />
         <entry key="..\:/sofiane_dev/mspr_dev_app/mspr_mobile/app/src/main/res/drawable/btn_top.xml" value="0.2324074074074074" />
         <entry key="..\:/sofiane_dev/mspr_dev_app/mspr_mobile/app/src/main/res/drawable/login_btn_bg.xml" value="0.26614583333333336" />
       </map>

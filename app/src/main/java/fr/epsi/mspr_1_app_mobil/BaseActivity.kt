@@ -23,20 +23,20 @@ open class BaseActivity : AppCompatActivity() {
         textViewTitle.text = txt
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d("Epsi","################ onCreate ##############"+javaClass.simpleName)
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d("Epsi","################ onResume ##############"+javaClass.simpleName)
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d("Epsi","################ onPause ##############"+javaClass.simpleName)
-    }
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        Log.d("Epsi","################ onCreate ##############"+javaClass.simpleName)
+//    }
+//
+//    override fun onResume() {
+//        super.onResume()
+//        Log.d("Epsi","################ onResume ##############"+javaClass.simpleName)
+//    }
+//
+//    override fun onPause() {
+//        super.onPause()
+//        Log.d("Epsi","################ onPause ##############"+javaClass.simpleName)
+//    }
 
     fun showToast(txt : String){
         Toast.makeText(this,txt, Toast.LENGTH_SHORT).show()
