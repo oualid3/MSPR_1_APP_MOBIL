@@ -15,7 +15,7 @@
             <TextView
                 android:padding="10sp"
                 android:id="@+id/textViewAgentName"
-                android:background="@drawable/bouton"
+                android:background="@drawable/login_btn_bg"
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:layout_width="150dp"

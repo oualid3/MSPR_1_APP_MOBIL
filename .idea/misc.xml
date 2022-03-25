@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MSPR_1_APP_MOBIL/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/MSPR_1_APP_MOBIL/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/MSPR_1_APP_MOBIL/app/src/main/res/layout/activity_materials.xml" value="0.25" />
+        <entry key="..\:/MSPR_1_APP_MOBIL/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/MSPR_1_APP_MOBIL/app/src/main/res/layout/cell_agent.xml" value="0.25" />
+        <entry key="..\:/MSPR_1_APP_MOBIL/app/src/main/res/layout/cell_material.xml" value="0.25" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/drawable/bouton.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mezro/AndroidStudioProjects/MSPR_1_APP_MOBIL/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.37864583333333335" />
