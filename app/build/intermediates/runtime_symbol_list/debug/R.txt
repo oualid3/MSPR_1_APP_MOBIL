@@ -2448,6 +2448,7 @@ int drawable btn_radio_off_mtrl 0x7f070060
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f070061
 int drawable btn_radio_on_mtrl 0x7f070062
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070063
+int drawable btn_retour_bleu 0x7f0700ac
 int drawable btn_top 0x7f070064
 int drawable design_fab_background 0x7f070065
 int drawable design_ic_visibility 0x7f070066
