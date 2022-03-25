@@ -2867,6 +2867,7 @@ id radio
 id ratio
 id rectangles
 id recyclerViewAgent
+id recyclerViewMaterial
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2961,7 +2962,10 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewAgentMission
 id textViewAgentName
+id textViewAgentNom
+id textViewAgentPrenom
 id textViewTitle
 id text_input_end_icon
 id text_input_error_icon
@@ -3100,7 +3104,8 @@ layout activity_login
 layout activity_main
 layout activity_materials
 layout activity_splash
-layout card_agent
+layout cell_agent
+layout cell_material
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

@@ -36,10 +36,6 @@
         "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\layout_card_agent.xml.flat",
-        "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\layout\\card_agent.xml"
-    },
-    {
         "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_login_bg.png.flat",
         "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_login_bg.png"
     },
@@ -62,6 +58,10 @@
     {
         "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_lock.xml.flat",
         "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\layout_cell_agent.xml.flat",
+        "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\layout\\cell_agent.xml"
     },
     {
         "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_register_bg.png.flat",
@@ -166,6 +166,10 @@
     {
         "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_header.xml.flat",
         "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\layout\\layout_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\layout_cell_material.xml.flat",
+        "source": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\src\\main\\res\\layout\\cell_material.xml"
     },
     {
         "merged": "C:\\Users\\mezro\\AndroidStudioProjects\\MSPR_1_APP_MOBIL\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_register_bg.png.flat",

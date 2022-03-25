@@ -17,22 +17,22 @@ class AgentAdapter (private val agents: ArrayList<Agent>): RecyclerView.Adapter<
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
-        val view: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.card_agent, viewGroup, false)
+        val view: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.cell_agent, viewGroup, false)
 
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val currentCategory = agents.get(position)
+        val currentAgent = agents.get(position)
 
-        holder.textViewAgentName.text=currentCategory.fullname
+        holder.textViewAgentName.text=currentAgent.fullname
 
 
         holder.contentLayout.setOnClickListener(View.OnClickListener {
             val activity = holder.itemView.context as Activity
             val newIntent= Intent(activity, LoginActivity::class.java)
-            newIntent.putExtra("fullname",currentCategory.fullname)
-            newIntent.putExtra("agentUrl",currentCategory.agentUrl)
+            newIntent.putExtra("fullname",currentAgent.fullname)
+            newIntent.putExtra("agentUrl",currentAgent.agentUrl)
             activity.startActivity(newIntent)
         })
         /*
