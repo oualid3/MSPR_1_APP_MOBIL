@@ -1,7 +1,5 @@
 package fr.epsi.mspr_1_app_mobil
 
-import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -13,7 +11,7 @@ open class BaseActivity : AppCompatActivity() {
     fun showBtnBack(){
         val imageViewBack=findViewById<ImageView>(R.id.imageViewBack)
         imageViewBack.visibility=View.VISIBLE
-        imageViewBack.setOnClickListener(View.OnClickListener {
+        imageViewBack.setOnClickListener({
             finish()
         })
     }

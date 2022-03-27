@@ -16,7 +16,7 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MaterialsActivity"
+            android:name=".AgentActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

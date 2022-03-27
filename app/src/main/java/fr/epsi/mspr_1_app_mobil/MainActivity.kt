@@ -1,9 +1,6 @@
 package fr.epsi.mspr_1_app_mobil
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import okhttp3.*
@@ -15,11 +12,11 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val Agents = arrayListOf<Agent>()
+        val Agents = arrayListOf<AgentListElement>()
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewAgent)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        val agentAdapter = AgentAdapter(Agents)
+        val agentAdapter = AgentListElementAdapter(Agents)
         recyclerView.adapter = agentAdapter
 
         val okHttpClient: OkHttpClient = OkHttpClient.Builder().build()
@@ -45,10 +42,10 @@ class MainActivity : BaseActivity() {
                         val jsAgents = jsArray.getJSONObject(i)
                         val fullname =jsAgents.optString("fullname","")
                         val agentUrl =jsAgents.optString("agentUrl","")
-                        val agent = Agent(fullname = fullname, agentUrl = agentUrl)
+                        val agent = AgentListElement(fullname = fullname, agentUrl = agentUrl)
                         Agents.add(agent)
                     }
-                    runOnUiThread(Runnable {
+                    runOnUiThread({
                         agentAdapter.notifyDataSetChanged()
                     })
                 }

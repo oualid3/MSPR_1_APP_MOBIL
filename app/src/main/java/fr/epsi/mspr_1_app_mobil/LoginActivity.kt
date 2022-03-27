@@ -1,18 +1,15 @@
 package fr.epsi.mspr_1_app_mobil
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.TextView
 import com.google.android.material.button.MaterialButton
-import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import okhttp3.*
 import org.json.JSONObject
 import java.io.IOException
-import java.io.InputStream
+import java.lang.Exception
 
 class LoginActivity : AppCompatActivity() {
 
@@ -21,12 +18,6 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         val i = intent
         val agentUrl = i.getStringExtra("agentUrl")
-        val materials = arrayListOf<Material>()
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewMaterial)
-
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        val materialsAdapter = MaterialAdapter(materials)
-        recyclerView.adapter = materialsAdapter
 
         val username = findViewById<View>(R.id.username) as TextView
         val password = findViewById<View>(R.id.password) as TextView
@@ -49,44 +40,48 @@ class LoginActivity : AppCompatActivity() {
                 override fun onFailure(call: Call, e: IOException) {
                     e.printStackTrace()
                 }
-
+                //{"agent":{
+                // "prenom":"Ayano",
+                // "nom":"Aishi",
+                // "mission":"Surveillante entrepôt",
+                // "image":"aaishi/image.png",
+                // "materiel":[
+                //      {"key":"kit","value":"Kit oreilette"},
+                //      {"key":"lacrymo","value":"Bombes lacrymogène"},
+                //      {"key":"lampe","value":"Lampe Torche"}
+                //      ]
+                // }}
                 override fun onResponse(call: Call, response: Response) {
-                    print(response)
+                    Log.d("response",response.toString())
                     val data = response.body?.string()
                     if (data != null) {
-                        val jsOb = JSONObject(data)
-                        val jsArray = jsOb.getJSONArray("agents")
-                        for (i in 0 until jsArray.length()) {
-                            val jsMaterial = jsArray.getJSONObject(i)
-                            val prenom = jsMaterial.optString("prenom", "")
-                            val nom = jsMaterial.optString("nom", "")
-                            val mission = jsMaterial.optString("mission", "")
-                            val imageUrl = jsMaterial.optString("image", "")
-                            val material = Material(prenom = prenom, nom = nom, mission = mission, picture_url = imageUrl)
-                            materials.add(material)
+                        try {
+                            val jsAgent = JSONObject(data).getJSONObject("agent")
+
+                            val prenom = jsAgent.getString("prenom")
+                            val nom = jsAgent.getString("nom")
+                            val mission = jsAgent.getString("mission")
+                            val imageUrl = jsAgent.getString("image")
+                            val jsMaterielArr = jsAgent.getJSONArray("materiel")
+
+                            val equipements = ArrayList<String>()
+                            for (i in 0 until jsMaterielArr.length()) {
+                                val jsMaterielObj = jsMaterielArr.getJSONObject(i)
+                                val cle = jsMaterielObj.getString("key")
+                                val valeur = jsMaterielObj.optString("value","")
+                                if(cle.equals(valeur)){
+                                    equipements.add(cle)
+                                } else {
+                                    equipements.add(valeur)
+                                }
+                            }
+                            val agent = Agent(prenom = prenom, nom = nom,mission = mission, picture_url = imageUrl, materiel = equipements )
+                        } catch (e: Exception){
+                            Log.d("Réponse incorrecte",e.printStackTrace().toString())
                         }
-                        runOnUiThread(Runnable {
-                            materialsAdapter.notifyDataSetChanged()
-                        })
                     }
                 }
             })
         }
     }
 }
-
-//            if (username.text.toString() == getString(R.string.Agent1) && password.text.toString() == "admin") {
-//                //correct
-//                Toast.makeText(this@LoginActivity, "LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show()
-//                val newIntent= Intent(application,MaterialsActivity::class.java)
-//                newIntent.putExtra("title",getString(R.string.Agent1))
-//                startActivity(newIntent)
-//            } else if (username.text.toString() == getString(R.string.Agent2) && password.text.toString() == "admin2") {
-//                //correct
-//                Toast.makeText(this@LoginActivity, "LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show()
-//                val newIntent= Intent(application,MaterialsActivity::class.java)
-//                newIntent.putExtra("title",getString(R.string.Agent2))
-//                startActivity(newIntent)
-//            }
-//            else  //incorrect
-//                Toast.makeText(this@LoginActivity, "LOGIN FAILED !!!", Toast.LENGTH_SHORT).show()
