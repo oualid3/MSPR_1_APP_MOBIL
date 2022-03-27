@@ -1,5 +1,6 @@
 package fr.epsi.mspr_1_app_mobil
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,13 +12,14 @@ import org.json.JSONObject
 import java.io.IOException
 import java.lang.Exception
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         val i = intent
         val agentUrl = i.getStringExtra("agentUrl")
+        showBtnBack()
 
         val username = findViewById<View>(R.id.username) as TextView
         val password = findViewById<View>(R.id.password) as TextView
@@ -27,11 +29,11 @@ class LoginActivity : AppCompatActivity() {
         loginbtn.setOnClickListener {
 
             val okHttpClient: OkHttpClient = OkHttpClient.Builder().build()
-            val mRequestURL = "http://frosty.thebault.pro/" + agentUrl
-            print(mRequestURL)
+            val mRequestURL = "http://frosty.thebault.pro/$agentUrl"
+            val basicToken = Credentials.basic(username.text.toString(), password.text.toString())
             val request = Request.Builder()
                 .url(mRequestURL)
-                .addHeader("Authorization", Credentials.basic(username.text.toString(), password.text.toString()))
+                .addHeader("Authorization", basicToken)
                 .get()
                 .cacheControl(CacheControl.FORCE_NETWORK)
                 .build()
@@ -75,9 +77,13 @@ class LoginActivity : AppCompatActivity() {
                                     equipements.add(valeur)
                                 }
                             }
-                            val agent = Agent(prenom = prenom, nom = nom,mission = mission, picture_url = imageUrl, materiel = equipements )
+                            val agent = Agent(prenom = prenom, nom = nom,mission = mission, picture_url = imageUrl, basicToken = basicToken, materiel = equipements)
+                            val newIntent= Intent(application,AgentActivity::class.java)
+                            newIntent.putExtra("agent",agent)
+                            startActivity(newIntent)
                         } catch (e: Exception){
                             Log.d("Réponse incorrecte",e.printStackTrace().toString())
+                            showToast("Login incorrect")
                         }
                     }
                 }

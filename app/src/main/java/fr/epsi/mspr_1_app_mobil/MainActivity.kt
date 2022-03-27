@@ -45,7 +45,7 @@ class MainActivity : BaseActivity() {
                         val agent = AgentListElement(fullname = fullname, agentUrl = agentUrl)
                         Agents.add(agent)
                     }
-                    runOnUiThread({
+                    runOnUiThread( {
                         agentAdapter.notifyDataSetChanged()
                     })
                 }
