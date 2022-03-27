@@ -21,12 +21,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         val i = intent
         val agentUrl = i.getStringExtra("agentUrl")
-        val materials = arrayListOf<Material>()
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewMaterial)
-
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        val materialsAdapter = MaterialAdapter(materials)
-        recyclerView.adapter = materialsAdapter
+//        val materials = arrayListOf<Material>()
+//        val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewMaterial)
+//
+//        recyclerView.layoutManager = LinearLayoutManager(this)
+//        val materialsAdapter = MaterialAdapter(materials)
+//        recyclerView.adapter = materialsAdapter
 
         val username = findViewById<View>(R.id.username) as TextView
         val password = findViewById<View>(R.id.password) as TextView
@@ -53,22 +53,22 @@ class LoginActivity : AppCompatActivity() {
                 override fun onResponse(call: Call, response: Response) {
                     print(response)
                     val data = response.body?.string()
-                    if (data != null) {
-                        val jsOb = JSONObject(data)
-                        val jsArray = jsOb.getJSONArray("agents")
-                        for (i in 0 until jsArray.length()) {
-                            val jsMaterial = jsArray.getJSONObject(i)
-                            val prenom = jsMaterial.optString("prenom", "")
-                            val nom = jsMaterial.optString("nom", "")
-                            val mission = jsMaterial.optString("mission", "")
-                            val imageUrl = jsMaterial.optString("image", "")
-                            val material = Material(prenom = prenom, nom = nom, mission = mission, picture_url = imageUrl)
-                            materials.add(material)
-                        }
-                        runOnUiThread(Runnable {
-                            materialsAdapter.notifyDataSetChanged()
-                        })
-                    }
+//                    if (data != null) {
+//                        val jsOb = JSONObject(data)
+//                        val jsArray = jsOb.getJSONArray("agents")
+//                        for (i in 0 until jsArray.length()) {
+//                            val jsMaterial = jsArray.getJSONObject(i)
+//                            val prenom = jsMaterial.optString("prenom", "")
+//                            val nom = jsMaterial.optString("nom", "")
+//                            val mission = jsMaterial.optString("mission", "")
+//                            val imageUrl = jsMaterial.optString("image", "")
+//                            val material = Material(prenom = prenom, nom = nom, mission = mission, picture_url = imageUrl)
+//                            materials.add(material)
+//                        }
+//                        runOnUiThread(Runnable {
+//                            materialsAdapter.notifyDataSetChanged()
+//                        })
+//                    }
                 }
             })
         }
