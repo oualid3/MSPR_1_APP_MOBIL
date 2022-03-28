@@ -3,6 +3,7 @@ package fr.epsi.mspr_1_app_mobil
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Looper
 import android.util.Log
 import android.view.View
 import android.widget.TextView
@@ -83,6 +84,7 @@ class LoginActivity : BaseActivity() {
                             startActivity(newIntent)
                         } catch (e: Exception){
                             Log.d("Réponse incorrecte",e.printStackTrace().toString())
+                            Looper.prepare()
                             showToast("Login incorrect")
                         }
                     }
