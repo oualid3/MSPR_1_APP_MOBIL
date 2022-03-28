@@ -11,4 +11,14 @@
     <string name="Agent9">Vtom</string>
     <string name="Agent10">Ldark</string>
     <string name="Agent11">Lbob</string>
+    <string name="agent_picture">Image agent</string>
+    <string name="agent_lastname">Nom :</string>
+    <string name="agent_firstname">Prénom :</string>
+    <string name="agent_mission">Mission :</string>
+    <string name="go_back_arrow">Flèche de retour arrière</string>
+    <string name="sign_in">Identification</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="equipment">Équipement :</string>
+    <string name="login">Se connecter</string>
 </resources>
